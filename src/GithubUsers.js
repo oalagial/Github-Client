@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchUsersAction } from "./redux/slices/githubSlices";
 import User from "./User";
 import './scss/GithubUsers.scss';
-import { CardContainer } from "./globalStyles";
+import { CardContainer, CenterContainer } from "./globalStyles";
 
 const GithubUsers = () => {
   const [page, setPage] = useState(1);
@@ -36,7 +36,7 @@ const GithubUsers = () => {
       ) : error ? (
         <h1>{error?.data?.message}</h1>
       ) : (
-        <div className="container">
+        <CenterContainer>
           <div className="sort-by">
             <label>Sort by: </label>
             <select
@@ -65,7 +65,7 @@ const GithubUsers = () => {
             {/* TODO: remove next button when there is not a next page */}
             <div className="main-button" onClick={increasePage}>Next</div>
           </div>
-        </div>
+        </CenterContainer>
       )}
     </section>
   );

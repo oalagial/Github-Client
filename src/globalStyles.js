@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+const CenterContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+`
+
+
 const PrimaryButton = styled.button`
   border-radius: 30px;
   color: #2d3149;
@@ -16,11 +26,11 @@ const CardContainer = styled.div`
   grid-gap: 1rem;
 
   @media (min-width: 1000px) {
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 400px);
   }
 
   @media (min-width: 1500px) {
-    grid-template-columns: repeat(3, 500px);
+    grid-template-columns: repeat(3, 400px);
   }
 `;
 
@@ -36,4 +46,4 @@ const Card = styled.div`
   border-radius: 4%;
 `;
 
-export { PrimaryButton, CardContainer, Card };
+export { PrimaryButton, CardContainer, Card, CenterContainer };

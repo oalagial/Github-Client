@@ -63,9 +63,9 @@ const User = (props) => {
   return (
     <Card>
         <img src={user?.avatar_url} alt="" />
-        <h3 className="name">{user?.name}</h3>
+        <h3 className="name">{user?.login}</h3>
         <h4>
-          Login Name: <span>{user?.login}</span>
+          Name: <span>{user?.name}</span>
         </h4>
         <h4>
           Location: <span>{user?.location}</span>

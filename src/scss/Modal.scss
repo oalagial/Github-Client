@@ -1,0 +1,84 @@
+:root {
+  --clr-gold: #c59d5f;
+}
+
+h1 {
+    font-size: 2.5rem;
+  }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-main {
+    position:fixed;
+    background: white;
+    color: black;
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow-y: scroll;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+
+  .repo-user {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .repo-name {
+    text-align: center;
+  }
+
+  .repo-detail {
+    margin-top: 15px;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .underline {
+    width: 15rem;
+    height: 0.25rem;
+    background: var(--clr-gold);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    content: "."; 
+    min-height: 4px;
+  }
+
+  .search-container {
+    margin: 2rem;
+    font-size: 2rem;
+
+    input {
+      font-size: 2rem;
+    }
+  }
